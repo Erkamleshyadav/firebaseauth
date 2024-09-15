@@ -77,11 +77,7 @@ class AuthLogin extends StatelessWidget {
             //       // signUp(email, password);
             //     },
             //     child: Text('submit')),
-            ElevatedButton(
-                onPressed: () {
-                  singIn();
-                },
-                child: Text('singIn'))
+            ElevatedButton(onPressed: (() => singIn()), child: Text('singIn'))
           ],
         ),
       ),

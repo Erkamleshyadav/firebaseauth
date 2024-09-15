@@ -23,7 +23,9 @@ class _HomepageState extends State<Homepage> {
       ),
       body: Center(child: Container(child: Text('${user!.email}'))),
       floatingActionButton: FloatingActionButton(
-        onPressed: (() => signout()),
+        onPressed: () {
+          signout();
+        },
         child: Icon(Icons.login_rounded),
       ),
     );
